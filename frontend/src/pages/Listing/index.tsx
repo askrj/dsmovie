@@ -1,5 +1,4 @@
 import MovieCard from "components/MovieCard";
-import MovieScore from "components/MovieScore";
 import Pagination from "components/pagination";
 
 function Listing(){
@@ -8,7 +7,23 @@ function Listing(){
 
         <>
         <Pagination></Pagination>
-        <MovieCard></MovieCard>
+
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                <MovieCard></MovieCard>
+                </div>
+                <div className="col">
+                <MovieCard></MovieCard>
+                </div>
+                <div className="col">
+                <MovieCard></MovieCard>
+                </div>
+                <div className="col">
+                <MovieCard></MovieCard>
+                </div>
+            </div>
+        </div>
         </>
     );
 }
